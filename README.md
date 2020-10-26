@@ -4,12 +4,13 @@ COMP429 Programming Assignment 1
 A Chat Application for Remote Message Exchange
 
 Carlos Benavides
-Matthew
+Matthew Estes
 
 # Contributions
 
 Carlos - Created the barebones of the project, created the client/server and the terminal/unix shell for this project. Was able to create the functionality of joining, and leaving a certain chat room process, and send a message to connected processes.
 
+Matthew - Did a bunch of bug checking and a number of modifications. Made everything two-way, ie, when one peer connects or disconnects, the other announces that this happened, and also adds/removes the connection.
 
 ### How to run
 
