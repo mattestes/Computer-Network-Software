@@ -1,36 +1,58 @@
-# Computer-Network-Software
-CSUN Comp 429 - projects/assignments
+# Computer-Network-Software - CSUN Comp 429
 
-how to run
+COMP429 Programming Assignment 1
+A Chat Application for Remote Message Exchange
+
+Carlos Benavides
+Matthew
+
+# Contributions
+
+Carlos - Created the barebones of the project, created the client/server and the terminal/unix shell for this project. Was able to create the functionality of joining, and leaving a certain chat room process, and send a message to connected processes.
+
+
+### How to run
 
 clone this repo
 
-python ./ChatApplication.py <random port number, this is the port number you will be hosting your chat room>
+cd .\Computer-Network-Software\
 
-run help in the shell to get a list of all commands
+must have python (python3 preferred)
 
-run help <command> to read the documentation of that command
+`python ./chat.py <desired port number, this is the port number you will be hosting your chat room>`
 
-the main commmands are
+for example
 
-connect <remote_ip> <remote_port (the port of the connection room)>
+`python ./chat.py 5656`
 
-then run list to see the connections connected to
+1) run `help` in the shell to get a list of all commands
 
-then run send <number from list> <message> i.e. send 1 lol
+run `help <command>` to read the documentation of that command
 
-using one machine
+2) run `myip` to see the ip of your machine
 
-I did the following
+3) run `myport` to see the port you have chosen for your chatroom
 
-cd .\Documents\comp_sci\Computer-Network-Software\
+4) run `connect <remote_ip> <remote_port>` to connect to a different user's chatroom
 
-python .\ChatApplication.py 1111
+5) run `list` to see the all the connections the process if part of
 
-python .\ChatApplication.py 2222
+6) run `terminate <connection_id>` to terminate connection to a certain host (connection_id is from the list command)
 
-python .\ChatApplication.py 3333
+7) run `send <message> <connection_id>` to send a message to a certain host (connection_id is from the list commands)
 
-connect 192.168.0.169 3333
+Demo in terminal:
 
-use this line on all three terminals ^
+![Imgur Image](https://i.imgur.com/bE2bHk0.png)
+
+
+Sources:
+
+StackOverflow
+1) to find how to retrieve ip from python - https://stackoverflow.com/questions/166506/finding-local-ip-addresses-using-pythons-stdlib
+
+GeeksForGeeks
+1) to understand how to make a thread class and stop a thread in python - https://www.geeksforgeeks.org/python-different-ways-to-kill-a-thread/
+
+Medium - Let’s Write a Chat App in Python
+1) to understand how sockets work in python - https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac170
